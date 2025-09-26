@@ -1,0 +1,3 @@
+- [x] Add smooth scrolling CSS to src/index.css
+- [x] Add id="contact" to footer in src/components/Footer.tsx
+- [x] Modify "Shop Products" button in src/components/Hero.tsx to link to #products
