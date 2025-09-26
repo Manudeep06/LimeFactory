@@ -22,7 +22,7 @@ const Header = () => {
               <Factory className="h-5 w-5 sm:h-7 sm:w-7 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">CO2 Lime Industries</h1>
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">Vijaya Lakshmi Industries</h1>
               <p className="text-xs sm:text-sm text-muted-foreground font-medium hidden sm:block">Industrial • Reliable • Sustainable</p>
             </div>
           </div>

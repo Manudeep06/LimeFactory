@@ -367,7 +367,8 @@
                 radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
     pointer-events: none;
-    z-index: 0;
+    /* Keep this decorative layer behind all children */
+    z-index: -1;
   }
   
   .product-detail-header {
@@ -452,12 +453,18 @@
       rgba(255, 255, 255, 0.1) 0%, 
       rgba(34, 197, 94, 0.05) 100%);
     backdrop-filter: blur(10px);
+    /* Create a new stacking context so child z-indexes behave predictably */
+    isolation: isolate;
   }
   
   .product-detail-image {
     @apply w-full h-72 sm:h-96 lg:h-[28rem] object-cover;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     filter: brightness(1.05) contrast(1.1) saturate(1.1);
+    /* Ensure predictable stacking inside isolated container */
+    position: relative;
+    z-index: 0;
+    display: block;
   }
   
   .product-detail-image-container:hover .product-detail-image {

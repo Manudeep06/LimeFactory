@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="bg-lime-light rounded-full p-2">
                 <Factory className="h-6 w-6 text-lime-light-foreground" />
               </div>
-              <h3 className="text-xl font-semibold">CO2 Lime Industries</h3>
+              <h3 className="text-xl font-semibold">Vijaya Lakshmi Industries</h3>
             </div>
             <p className="text-primary-foreground/80 mb-4 leading-relaxed">
               Leading industrial lime manufacturer specializing in CO2 capture solutions and chemical processing. 
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2024 CO2 Lime Industries. All rights reserved. Built for industrial excellence.</p>
+          <p>&copy; 2024 Vijaya Lakshmi Industries. All rights reserved. Built for industrial excellence.</p>
         </div>
       </div>
     </footer>
